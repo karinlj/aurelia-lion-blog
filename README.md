@@ -1,7 +1,9 @@
 # `lion-blog`
 ## Description
 
-A blog for exploring the Aurelia js CLI. 
+A blog for exploring the Aurelia js CLI.   
+
+![Lions](/static/img/lion.jpg?raw=true "Lions")
 
 ## Installation
 
