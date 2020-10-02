@@ -1,0 +1,19 @@
+<template bindable="error, title, posts">
+  <require from="../../atoms/singlePostLink/single-post-link.html"></require>
+  <!--  <require from="../../atoms/error-message.html"></require> -->
+  <require from="../../molecules/blogPost/blog-post"></require>
+
+  <!--  <error-message error.bind="error"></error-message> -->
+
+  <div class="alert alert-dark">
+    <slot></slot>
+  </div>
+
+  <!--   iterating over posts -->
+  <div repeat.for="post of posts">
+    <blog-post post.bind="post"></blog-post>
+
+    <single-post-link post.bind="post"></single-post-link>
+    <hr>
+  </div>
+</template>

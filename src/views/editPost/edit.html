@@ -1,0 +1,6 @@
+<template>
+  <require from="../../molecules/forms/postForm/post-form"></require>
+
+  <!-- when submit is clicked in the post-form we use editPost() in edit.js-->
+  <post-form post.bind="post" title.bind="title" submit.delegate="editPost()"></post-form>
+</template>

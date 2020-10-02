@@ -1,0 +1,85 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./variables.less";
+@import "../atoms/singlePostLink/single-post-link.less";
+@import "../molecules/forms/postForm/post-form.less";
+@import "../organisms/footer/footer.less";
+@import "../organisms/header/header-blog.less";
+@import "../organisms/jumbotron/jumbotron.less";
+@import "../organisms/sidebar/sidebar.less";
+@import "../molecules/blogPost/blog-post.less";
+@import "~toastr/build/toastr.css";
+
+//general
+.main-section {
+  margin-top: 1.5rem;
+}
+
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.h-250 {
+  height: 250px;
+}
+.h-md-250 {
+  @media screen and (min-width: 720px) {
+    height: 250px;
+  }
+}
+
+//typography
+h1 {
+  font-family: @font_family_1;
+}
+h2 {
+  font-family: @font_family_1;
+}
+h3 {
+  font-family: @font_family_1;
+}
+h4 {
+  font-family: @font_family_1;
+}
+h5 {
+  font-family: @font_family_1;
+}
+h6 {
+  font-family: @font_family_1;
+}
+.display-4 {
+  font-size: 2.5rem;
+  @media screen and (min-width: 720px) {
+    font-size: 3rem;
+  }
+}
+
+/* pagination */
+.blog-pagination {
+  margin: 4rem 0;
+
+  > .btn {
+    border-radius: 2rem;
+  }
+}
+
+/* test */
+.blog-test-section {
+  background: lightblue;
+}
+
+/* other */
+/* .list-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-section {
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  input[type="text"] {
+    margin: 1rem 0;
+  }
+} */

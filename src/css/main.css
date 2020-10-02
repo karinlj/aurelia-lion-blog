@@ -1,0 +1,197 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~toastr/build/toastr.css";
+.single-post-link {
+  display: block;
+  margin: 1rem 0 2rem 0;
+}
+.val-error {
+  color: red;
+}
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+  margin-top: 4rem;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+.nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 720px) {
+  .nav {
+    margin-top: 0rem;
+    padding-bottom: 0;
+  }
+}
+.nav .btn {
+  margin-left: 0;
+  margin-right: 0.8rem;
+}
+@media screen and (min-width: 720px) {
+  .nav .btn {
+    margin-left: 0.8rem;
+    margin-right: 0rem;
+  }
+}
+.nav .text-muted.active {
+  color: #fff !important;
+  background: #6c757d !important;
+}
+.nav .btn .btn-sm .btn-outline-secondary.active {
+  color: #fff !important;
+  background: #6c757d !important;
+}
+/*     .nav-link {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      font-size: 0.875rem;
+    } */
+.navbar {
+  padding: 0.5rem 0;
+}
+@media screen and (min-width: 720px) {
+  .collapse.navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+.jumbotron {
+  height: 480px;
+  position: relative;
+  background: url("/static/img/lion.jpg") no-repeat center;
+  background-size: cover;
+}
+.jumbotron:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  display: block;
+}
+.sidebar {
+  padding-top: 4rem;
+}
+@media screen and (min-width: 720px) {
+  .sidebar {
+    padding-top: 0;
+  }
+}
+.sidebar .welcome {
+  color: #17a2b8;
+  margin-bottom: 1rem;
+}
+.sidebar a {
+  margin-right: 0.2rem;
+}
+.sidebar a .badge {
+  padding: 0.35em 0.4em;
+}
+.blog-post-title {
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+@media screen and (min-width: 40em) {
+  .blog-title {
+    font-size: 3.5rem;
+  }
+}
+.badge {
+  padding: 0.35em 0.4em;
+}
+.main-section {
+  margin-top: 1.5rem;
+}
+.flex-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.h-250 {
+  height: 250px;
+}
+@media screen and (min-width: 720px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
+h1 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+h2 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+h3 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+h4 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+h5 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.display-4 {
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 720px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+/* pagination */
+.blog-pagination {
+  margin: 4rem 0;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+/* test */
+.blog-test-section {
+  background: lightblue;
+}
+/* other */
+/* .list-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-section {
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  input[type="text"] {
+    margin: 1rem 0;
+  }
+} */

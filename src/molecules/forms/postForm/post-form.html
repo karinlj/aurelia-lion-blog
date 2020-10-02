@@ -1,0 +1,51 @@
+<template>
+  <!-- this.title = "Create Post";  i create.js-->
+  <h1>${title}</h1>
+  <!--   <form submit.delegate="createPost()"> -->
+
+  <form submit.delegate="submit()">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" placeholder="Your Post Title"
+        value.bind="post.title & validateOnChange" />
+    </div>
+
+    <div class="form-group">
+      <label for="body">Body</label>
+      <textarea class="form-control" rows="10" value.bind="post.body & validateOnChange""
+      ></textarea>
+    </div>
+
+    <div class=" form-check" repeat.for="tag of allTags">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        value.bind="tag"
+        checked.bind="post.tags"
+      />
+      <label for="" class="form-check-label">
+        ${tag}
+      </label>
+    </div>
+
+    <div class="form-group">
+      <input type="text" class="" value.bind="newTag" />
+      <a href="" click.delegate="addTag()">Add Tag +</a>
+    </div>
+
+    <hr />
+
+    <ul if.bind="controller.errors.length > 0">
+      <li repeat.for="error of controller.errors" class="val-error">
+        ${error}
+      </li>
+    </ul>
+    <button
+      type="submit"
+      class="btn btn-primary"
+      disabled.bind="controller.errors.length > 0"
+    >
+      ${title}
+    </button>
+  </form>
+</template>

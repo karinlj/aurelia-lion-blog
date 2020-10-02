@@ -1,0 +1,40 @@
+<!-- <template bindable="router, currentuser"> -->
+<template>
+  <header class="blog-header py-3">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="blog-header-logo text-dark" route-href="blog-home">Lion Blog</a>
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <nav class="nav d-flex">
+
+          <a class="btn btn-sm btn-outline-secondary  ${router.currentInstruction.config.name === 'create-post' ? 'active' : ''}"
+            route-href="create-post" if.bind="currentUser">New Post</a> <!--  t="nav:newpost" -->
+
+          <a class="btn btn-sm btn-outline-secondary ${router.currentInstruction.config.name === 'login' ? 'active' : ''}"
+            route-href="login" if.bind="!currentUser">Log In</a>
+
+          <a class="btn btn-sm btn-outline-secondary  ${router.currentInstruction.config.name === 'signup' ? 'active' : ''}"
+            route-href="signup" if.bind="!currentUser">Sign Up</a>
+
+          <a class="btn btn-sm btn-outline-secondary" href="#" if.bind="currentUser" click.delegate="logout()">Log
+            Out</a>
+        </nav>
+
+        <!-- <ul class="navbar-nav">
+                        <li
+                            repeat.for="row of router.navigation"
+                            class="${row.isActive ? 'active' : ''}"
+                          >
+                            <a class="nav-link" href.bind="row.href">${row.title}</a>
+                            <a class="nav-link" href.bind="row.href">ggh</a>
+                          </li> 
+                        </ul>-->
+      </div>
+    </nav>
+  </header>
+</template>

@@ -1,0 +1,18 @@
+<template>
+  <!--  <require from="../../atoms/btns/myBtn/my-btn"></require> -->
+  <require from="../../molecules/blogPost/blog-post"></require>
+  <require from="../../resources/value-converters/date-format"></require>
+  <!--   <require from="../../atoms/error-message.html"></require> -->
+
+  <!--   <error-message error.bind="error"></error-message> -->
+
+  <blog-post post.bind="post"></blog-post>
+
+  <!-- if logged in - show button -->
+  <!--  <a if.bind="authService.currentUser === post.author" route-href="route: edit-post; params.bind: {slug: post.slug}"
+    class="btn btn-primary">Edit Post</a> -->
+
+  <a route-href="route: edit-post; params.bind: {slug: post.slug}" class="btn btn-primary">Edit Post</a>
+
+  <!--   <my-btn title.bind="title" click.delegate="hello()"></my-btn> -->
+</template>

@@ -1,0 +1,20 @@
+<template>
+  <!--  bindable custom element-->
+  <require from="../../resources/value-converters/date-format"></require>
+
+  <div class="blog-post">
+    <h2 class="blog-post-title">${post.title}</h2>
+    <p class="blog-post-meta">
+      ${post.createdAt | dateFormat} by
+      <a route-href="blog-home">${post.author}</a>
+    </p>
+
+    <p>
+      <!--   iterating over post.tags -->
+      <a route-href="route: tag-view; params.bind: {tag:tag}" repeat.for="tag of post.tags">
+        <span class="badge badge-pill badge-info">${tag}</span>
+      </a>
+    </p>
+    <p>${post.body}</p>
+  </div>
+</template>

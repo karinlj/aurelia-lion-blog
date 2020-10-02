@@ -1,0 +1,7 @@
+<template>
+  <require from="../../molecules/postList/post-list.html"></require>
+
+  <post-list error.bind="error" title.bind="title" posts.bind="posts">
+    Viewing posts by <strong>${tag}</strong>
+  </post-list>
+</template>

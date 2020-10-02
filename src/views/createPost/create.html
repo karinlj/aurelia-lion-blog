@@ -1,0 +1,10 @@
+<template>
+  <require from="../../molecules/forms/postForm/post-form"></require>
+
+  <!-- when submit is clicked in the post-form we use createPost() in create.js-->
+  <post-form
+    post.bind="post"
+    title.bind="title"
+    submit.delegate="createPost()"
+  ></post-form>
+</template>

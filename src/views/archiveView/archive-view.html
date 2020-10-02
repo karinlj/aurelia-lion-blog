@@ -1,0 +1,14 @@
+<template>
+  <!--   compose -->
+  <!--  the whole view-model of this component is binding to post-list.html 
+  not so good for encapsulation and can open up for errors-->
+  <!--  <compose view="./post-list.html"></compose> -->
+
+  <!--   with custom element you have to explicity bind something -->
+  <!--  when possible use the custom element -->
+  <require from="../../molecules/postList/post-list.html"></require>
+
+  <post-list error.bind="error" title.bind="title" posts.bind="posts">
+    Viewing posts from <strong>${archive}</strong>
+  </post-list>
+</template>

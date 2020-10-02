@@ -1,0 +1,12 @@
+<!-- bindable custom element -->
+<template bindable="post">
+  <!-- go to single post tex: localhost:8080/#/blog/post/my-first-post -->
+  <div class="single-post-link">
+    <a
+      route-href="route: single-post; params.bind: {slug: post.slug}"
+      class="single-post-link"
+    >
+      View Post &raquo;
+    </a>
+  </div>
+</template>
