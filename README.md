@@ -3,7 +3,7 @@
 
 A blog for exploring the Aurelia js CLI.   
 
-![Sreenshot](/static/img/screenshot.jpg?raw=true "Sreenshot")
+![Sreenshot](/static/img/screenshot2.jpg?raw=true "Sreenshot")
 
 ## Installation
 
