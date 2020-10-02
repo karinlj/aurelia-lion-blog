@@ -15,6 +15,9 @@ To install
 
 Run `npm start`, then open `http://localhost:8080`
 
+## To run
+```npm run build```
+
 ## Built With
 
 * aurelia.js
